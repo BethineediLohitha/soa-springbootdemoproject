@@ -9,5 +9,8 @@ public interface PatientService
 	 Patient addPatient(Patient patient);
 	 List<Patient> displayAllPatients();
 	 Patient updaPatient(Patient p);
+	 Patient displayPatientByid(Long id);
+	 String deletePatientById(Long id);
+	 List<Patient> displayPatientByGender(String gender);
 
 }
