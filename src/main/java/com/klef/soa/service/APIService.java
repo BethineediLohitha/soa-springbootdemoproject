@@ -6,6 +6,6 @@ import com.klef.soa.dto.ProductDTO;
 
 public interface APIService 
 {
-	List<ProductDTO> displayALlProducts();
+	List<ProductDTO> displayAllProducts();
 	ProductDTO displayProductById(int id);
 }

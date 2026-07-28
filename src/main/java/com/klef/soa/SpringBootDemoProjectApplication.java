@@ -12,11 +12,5 @@ public class SpringBootDemoProjectApplication {
 		SpringApplication.run(SpringBootDemoProjectApplication.class, args);
 		System.out.println("Project is Running .... !!!");
 	}
-	@Bean
-	public RestTemplate restTemplate()
-	{
-		return new RestTemplate();
-		
-	}
-
+	
 }

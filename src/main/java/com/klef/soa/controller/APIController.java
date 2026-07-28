@@ -13,23 +13,20 @@ import com.klef.soa.service.APIService;
 
 @RestController
 @RequestMapping("/product")
-public class APIController 
+public class APIController
 {
-	@Autowired
-   private APIService service;
-   
-	@GetMapping
-	public List<ProductDTO> displayallproducts()
-	{
-		return service.displayAllProducts();
-	}
-	@GetMapping("/display/{id}")
-	public ProductDTO displayproductbyid(@PathVariable int id)
-	{
-		return service.displayProductById(id);
-	}
-	
-	
-	
-	
+    @Autowired
+    private APIService service;
+
+    @GetMapping
+    public List<ProductDTO> displayallproducts()
+    {
+        return service.displayAllProducts();
+    }
+
+    @GetMapping("/display/{id}")
+    public ProductDTO displayproductbyid(@PathVariable int id)
+    {
+        return service.displayProductById(id);
+    }
 }
